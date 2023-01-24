@@ -12,7 +12,7 @@ const app = express();
 
 dotenv.config({ path: "config/config.env" });
 let port = process.env.PORT;
-let hostname = process.env.HOST_NAME;
+// let hostname = process.env.HOST_NAME;
 
 app.use(morgan('tiny'));
 app.use(cors());
@@ -43,6 +43,6 @@ mongoose.connect(mongo_Url, connectionParams).then((response) => {
     process.exit(1);
 })
 
-app.listen(port, hostname, () => {
-    console.log(chalk.magentaBright(`Express Server is running on http://${hostname}:${port}`))
+app.listen(port, () => {
+    console.log(chalk.magentaBright(`Express Server is running on http://localhost:${port}`))
 })
