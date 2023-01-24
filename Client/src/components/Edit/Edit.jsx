@@ -18,14 +18,14 @@ const Edit = () => {
     }
 
     useEffect(() => {
-        Axios.get(`https://joyous-tiara-deer.cyclic.app/product/${product_Id}`).then((response) => {
+        Axios.get(`https://thoughtful-ox-teddy.cyclic.app/product/${product_Id}`).then((response) => {
             setSelectedProduct(response.data);
         }).catch(() => { })
     }, [product_Id])
 
     const submitHandler = (e) => {
         e.preventDefault();
-        const url = `https://joyous-tiara-deer.cyclic.app/product/${product_Id}`
+        const url = `https://thoughtful-ox-teddy.cyclic.app/product/${product_Id}`
         Axios.put(url, selectedProduct).then((res) => {
             console.log(res.data);
             setUpdated(true)

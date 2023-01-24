@@ -22,7 +22,7 @@ const CreateProduct = () => {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    const url = `https://joyous-tiara-deer.cyclic.app/product/create/`
+    const url = `https://thoughtful-ox-teddy.cyclic.app/product/create/`
     Axios.post(url, product).then((response) => {
       console.log(response.data);
       setSubmitted(true);

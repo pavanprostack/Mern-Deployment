@@ -9,7 +9,7 @@ const ProductList = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    const url = `https://joyous-tiara-deer.cyclic.app/product/all`
+    const url = `https://thoughtful-ox-teddy.cyclic.app/product/all`
     Axios.get(url).then((response) => {
       setProducts(response.data);
     }).catch(() => { })

@@ -8,7 +8,7 @@ import '../Admin/admin.scss'
 const Admin = () => {
     const [products, setProducts] = useState([]);
     useEffect(() => {
-        const url = `https://joyous-tiara-deer.cyclic.app/product/all`
+        const url = `https://thoughtful-ox-teddy.cyclic.app/product/all`
         Axios.get(url).then((response) => {
             setProducts(response.data);
         }).catch(() => { })
@@ -17,7 +17,7 @@ const Admin = () => {
     const navigate = useNavigate()
 
     const delProduct = (id) => {
-        const url = `https://joyous-tiara-deer.cyclic.app/product/${id}`
+        const url = `https://thoughtful-ox-teddy.cyclic.app/product/${id}`
         Axios.delete(url).then((response) => {
             console.log(response.data);
             navigate(0);
