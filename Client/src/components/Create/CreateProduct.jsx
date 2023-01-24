@@ -3,6 +3,7 @@ import { useState } from 'react'
 import Axios from 'axios'
 import {Navigate} from 'react-router-dom'
 
+import '../../CSS/create.css'
 
 const CreateProduct = () => {
   const [product, setProduct] = useState({
