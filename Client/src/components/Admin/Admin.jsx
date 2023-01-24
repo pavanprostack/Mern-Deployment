@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { useState } from 'react'
 import Axios from 'axios';
 import { Link, useNavigate } from 'react-router-dom';
-import '../Admin/admin.scss'
+import '../../CSS/admin.css'
 
 const Admin = () => {
     const [products, setProducts] = useState([]);

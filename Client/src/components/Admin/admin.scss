@@ -1,21 +1,20 @@
-thead{
+thead {
     color: aliceblue;
     font-size: 20px;
     background-color: rgb(65, 4, 122);
+
+    tbody {
+        color: rgb(0, 10, 13);
+        background: linear-gradient(rgb(255, 225, 0), rgb(219, 15, 49));
+    }
 }
 
-tbody{
-    color: rgb(0, 10, 13);
-   background: linear-gradient(rgb(255, 225, 0), rgb(219, 15, 49));
-}
 
-tbody tr{
-    /* height: 20px; */
-    /* display: flex; */
-}
 
-.edit-btn{
-    background-color: #5cf404; /* Green */
+
+.edit-btn {
+    background-color: #5cf404;
+    /* Green */
     border: none;
     color: hsl(202, 100%, 2%);
     padding: 10px 30px;
@@ -24,12 +23,13 @@ tbody tr{
     display: inline-block;
     font-size: 15px;
     font-weight: 500;
-    margin: 4px 2px; 
+    margin: 4px 2px;
     cursor: pointer;
 }
 
-.del-btn{
-    background-color: #f42804; /* Green */
+.del-btn {
+    background-color: #f42804;
+    /* Green */
     border: none;
     color: rgb(1, 7, 11);
     padding: 10px 23px;
@@ -38,7 +38,6 @@ tbody tr{
     display: inline-block;
     font-size: 15px;
     font-weight: 500;
-    margin: 4px 2px; 
+    margin: 4px 2px;
     cursor: pointer;
 }
-
