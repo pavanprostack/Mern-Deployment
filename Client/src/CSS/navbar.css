@@ -1,0 +1,24 @@
+.navbar{
+  background:   linear-gradient(to right, #1d08d8d7 , hwb(188 1% 93% / 0.895));
+  background:
+        linear-gradient(hsla(239, 95%, 49%, 0.765), transparent),
+        linear-gradient(to top left, #ff0000, transparent),
+        linear-gradient(to top right, #0fadec, transparent);
+}
+
+.navbar {
+  position: sticky;
+  scroll-behavior: smooth;
+  top: 0;
+  width: 100%;
+  font-size: 20px;
+  z-index: 1;
+}
+
+.navbar-brand{
+  font-size:30px ;
+  font-style: italic;
+  font-weight:bolder;
+}
+
+
